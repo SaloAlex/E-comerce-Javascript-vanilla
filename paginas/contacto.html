@@ -2,91 +2,137 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-    
-    rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilo.css" />
-    <title>Oculus Mania</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <title>Eculus Mania</title>
 </head>
 
 <body>
-    <header>
-        <!--navBar-->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Oculus Mania</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-
-                    expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../paginas/paraleer.html">Lentes para leer</a></li>
-                                <li><a class="dropdown-item" href="../paginas/parasol.html">Lentes de sol</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
-        </nav>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-ligth">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./paginas/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" data-bs-toggle="modal" data-bs-target="#modal">
+              </a>
+          </ul>
         </div>
-
-        <!--banner-->
-        <div class="banner">
-            <div class="banner-container">
-                <h1>Oculus Mania</h1>
-                <p>Una manera diferente de ver las cosas</p>
-            </div>
-        </div>
-    </header>
-    <!--shop content-->
-    <div class="conocenos"> <img src="../imagenes/glasses-5486967__340.jpg" class="d-flex img-fluid m-1 rounded-3" alt="...">
-        <h2>Acerca de nosotros</h2>
-        <p class="parrafo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum, iusto cum atque accusamus repellat ipsum quas commodi assumenda amet reiciendis sunt hic placeat 
-            voluptatibus tempora porro quos nobis voluptatem libero excepturi harum? Deleniti, dolores! Nam dolores beatae culpa repellat maiores necessitatibus atque illum 
-             voluptas sunt amet ab, neque officiis.
-        </p>
+      </div>
+    </nav>
+     <ul class="badge bg-info text-wrap" style="width: 15rem;" id="precio-dolar"></ul>
+  </header>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active d-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/17/13/36/woman-6632758__340.jpg" class="d-block w-100 d-img" alt="slider 1">
+        <div class="carousel-caption top-1 ">
+          <p class="mt-0 fs-1 text-uppercase">
+            oculus mania 
+          </p>
+          <h1 class="display-1 fw-bolder text-capitalize">
+            una manera diferente de ver la vida
+          </h1>
+        </div>
+      </div>
+      <div class="carousel-item d-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/25/15/05/girl-5091183__340.jpg" class="d-block w-100 d-img" alt="slider 2">
+        <div class="carousel-caption top-1">
+          <p class="mt-5 fs-1 text-uppercase">
+            oculus mania 
+          </p>
+          <h1 class="display-1 fw-bolder text-capitalize">
+            una manera diferente de ver la vida
+          </h1>
+        </div>
+      </div>
+      <div class="carousel-item d-item">
+        <img src="https://cdn.pixabay.com/photo/2021/07/03/07/06/man-6383192__340.jpg" class="d-block w-100 d-img" alt="slider 3">
+        <div class="carousel-caption top-1">
+          <p class="mt-5 fs-1 text-uppercase">
+            oculus mania 
+          </p>
+          <h1 class="display-1 fw-bolder text-capitalize">
+            una manera diferente de ver la vida
+          </h1>
+        </div>
+      </div>
+      <div class="carousel-item d-item">
+        <img src="https://cdn.pixabay.com/photo/2018/04/03/17/42/portrait-3287402__340.jpg" class="d-block w-100 d-img" alt="slider 4">
+        <div class="carousel-caption top-1">
+          <p class="mt-5 fs-1 text-uppercase">
+            oculus mania 
+          </p>
+          <h1 class="display-1 fw-bolder text-capitalize">
+            una manera diferente de ver la vida
+          </h1>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div>
+    <h2>Acerca de Nosotros</h2>
+    <img  src="https://cdn.pixabay.com/photo/2019/05/27/04/42/glasses-4231813__340.jpg" class="w-80 rounded-5" alt="...">
     <div class="ubicacion">
-        <h3>Nuestra ubicación</h3>
+      <p class="w-50 mx-auto p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, excepturi, aliquam explicabo, quas quisquam temporibus nobis consequuntur mollitia fuga perspiciatis aut. Tempore, nihil ad. In sapiente cum quia debitis reprehenderit modi corporis cupiditate placeat, officia dolores iusto, dignissimos possimus ut quo dolorum laborum magnam, suscipit assumenda quos facilis enim eligendi inventore! Vel commodi, praesentium animi illo iusto aspernatur laborum amet cum vero, aperiam possimus repellendus nulla delectus laudantium inventore? Quae modi numquam quidem et iusto earum aspernatur exercitationem ducimus accusantium.
+      </p>
+  </div>
+  <div>
+      <h3>Nuestra ubicación</h3>
 
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.379732558104!2d-58.43697741066249!3d- 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.379732558104!2d-58.43697741066249!3d- 
                      34.609282612322865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaefda95a351%3A0x88dbf09429e0b121!2sBalvanera%2C%20CABA!5e0!3m2!1ses- 
-                     419!2sar!4v1670818592013!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when- 
-                    downgrade">        
-        </iframe>
+                     419!2sar!4v1670818592013!5m2!1ses-419!2sar" width="500" height="350" style="border:10px;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when- 
+                    downgrade">
+      </iframe>
     </div>
-
-    <!--modal container-->
-    <div id="modal-container" class="modal-container"></div>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384- 
-     kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./scripts.js/productos.js"></script>
-    <script src="./scripts.js/app.js"></script>
-    <script src="./scripts.js/carrito.js"></script>
+  </div>
     <footer>
-        <p> Oculus Mania Todos los derechos reservados 2022 </p>
+      <p> Oculus Mania 2022 Todos los derechos reservados R® </p>
+      <a href="#top">
+        <button type="button" class="btn btn-outline-primary">Subir</button>
+      </a>
     </footer>
+    <script src="../app.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
