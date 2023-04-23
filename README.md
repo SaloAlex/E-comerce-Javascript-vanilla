@@ -11,6 +11,11 @@ Página de detalles de producto con información detallada sobre cada producto, 
 Página de carrito de compras donde los usuarios pueden agregar y eliminar productos, y realizar el pago final.
 Integración con una pasarela de pago para que los usuarios puedan realizar pagos de forma segura.
 
+UTILIZACION DE APIS
+
+En el proyecto se utilizo apis para saber el precio del dolar (en Argentina )
+y para la finalizacion de compra para la aprobacion de la misma con los datos del comprador
+
 TECNOLOGIAS UTILIZADAS
 
 HTML
